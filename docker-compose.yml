@@ -4,7 +4,7 @@ networks:
 
 services:
   luanti:
-    image: ghcr.io/luanti-org/luanti:5.14.0
+    image: ghcr.io/luanti-org/luanti:5.15.2
     container_name: anarchy_lab
     command: >
       ./bin/minetestserver --config /home/minetest/.minetest/minetest.conf --world /home/minetest/.minetest/worlds/anarchy_lab
