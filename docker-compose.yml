@@ -1,0 +1,36 @@
+networks:
+  luanti_network:
+    driver: bridge
+
+services:
+  luanti:
+    image: ghcr.io/luanti-org/luanti:5.14.0
+    container_name: anarchy_lab
+    command: >
+      ./bin/minetestserver --config /home/minetest/.minetest/minetest.conf --world /home/minetest/.minetest/worlds/anarchy_lab
+    ports:
+      - "30013:30013/udp"
+      - "30013:30013/tcp"
+    volumes:
+      - ./luanti_files:/home/minetest/.minetest/
+    environment:
+      - HOME=/home/minetest
+    restart: always
+    networks:
+      - luanti_network
+#    depends_on:
+#      - discordmt
+#
+#  discordmt:
+#    image: python:3.11-slim
+#    container_name: discordmt
+#    working_dir: /app
+#    command: >
+#      sh -c "pip install aiohttp discord.py && python server.py"
+#    ports:
+#      - "8080:8080"
+#    volumes:
+#      - ./luanti_files/games/minetest_game/mods/discordmt:/app
+#    restart: always
+#    networks:
+#      - luanti_network
