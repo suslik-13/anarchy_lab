@@ -11,7 +11,7 @@
 - 👥 **Clan system** — create alliances or fight against everyone
 - 🌍 **Open world** — explore, build, destroy
 
-**Discord community:** https://discord.gg/JUFdNDWAcu
+**Discord community:** https://discord.gg/j7ZHrgDTrn
 
 ## Server Launch
 
@@ -126,7 +126,7 @@ The official version of the mod is stable and does not contain the known bugs of
 
 ## Support
 
-If you have problems or questions, join our Discord server: https://discord.gg/JUFdNDWAcu
+If you have problems or questions, join our Discord server: https://discord.gg/j7ZHrgDTrn
 
 ---
 
